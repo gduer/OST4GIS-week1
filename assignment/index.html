@@ -9,7 +9,7 @@
     <div style="position: absolute; left: 0px; width: 400px; top: 0; bottom: 0;"></div>
     <!--map-->
     <div id="map" style="position: absolute; right: 0; left: 400px; top: 0; bottom: 0;"></div>
-    
+
     <!--javascript imports-->
     <script src="leaflet.js"></script>
     <!--The code below actually generates the map. Any code you would like to add
@@ -28,7 +28,12 @@
       	ext: 'png'
       }).addTo(map);
 
-      L.marker([50.5, 30.5]).addTo(map);
+      L.marker([39.955038, -75.211884]).addTo(map).bindPopup('Saa\'ds').openPopup();
+
+      L.marker([39.950740, -75.168577]).addTo(map).bindPopup('Dizengoff').openPopup();
+
+      L.marker([39.959207, -75.194588]).addTo(map).bindPopup('Changdu Famous Foods').openPopup();
+
     </script>
   </body>
 </html>
